@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import BaseComponent from './pages/BaseComponent';
+import MainPage from './pages/MainPage';
 
 const router = createBrowserRouter([
   { path: '' },
@@ -10,7 +11,7 @@ const router = createBrowserRouter([
   {
     path: '',
     element: <BaseComponent />,
-    children: [{ path: 'dashboard' }],
+    children: [{ path: 'main', element: <MainPage /> }],
   },
 ]);
 

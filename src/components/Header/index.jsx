@@ -5,7 +5,7 @@ export function Header() {
     <>
       <nav className='navbar'>
         <div className='navbar-brand'>
-          <span>Logo</span>
+          <span>MoneyMentor</span>
         </div>
         <div className='navbar-menu'>
           <ul>
