@@ -1,0 +1,26 @@
+.sidebar .dashboard {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.box {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    border-color: black;
+}
+
+.indicator {
+    text-align: center;
+}
+
+.indicator-title {
+    margin-bottom: 10px;
+}
+
+.indicator-value {
+    font-size: 24px;
+    font-weight: bold;
+}
