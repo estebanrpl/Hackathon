@@ -1,25 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {
-  createBrowserRouter,
-  BrowserRouter as Router,
-  RouterProvider,
-} from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import BaseComponent from './pages/BaseComponent';
 
 const router = createBrowserRouter([
   { path: '' },
 
   {
     path: '',
-    children: [{ path: 'dashboard' }, { path: '*' }],
+    element: <BaseComponent />,
+    children: [{ path: 'dashboard' }],
   },
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <Router>
-    <React.StrictMode>
-      <RouterProvider router={router} />
-    </React.StrictMode>
-  </Router>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );
