@@ -1,26 +1,47 @@
-.sidebar .dashboard {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+.section_form {
+    display: flex;
     padding: 20px;
+    margin: 100px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+
+    border: 1px solid black;
 }
 
-.box {
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    padding: 20px;
-    border-color: black;
+
+.mainForm {
+    height: 50%;
+    transition: transform 0.5s ease;
 }
 
-.indicator {
-    text-align: center;
+
+@keyframes slideUpAnimation {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-40%);
+    }
 }
 
-.indicator-title {
-    margin-bottom: 10px;
+.mainForm.slideUp {
+    animation: slideUpAnimation 0.5s ease forwards;
 }
 
-.indicator-value {
-    font-size: 24px;
-    font-weight: bold;
+.mainInput {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+}
+
+.mainButton {
+    width: 200px;
+    height: 50px;
+    margin: 10px;
+    padding: 10px;
 }

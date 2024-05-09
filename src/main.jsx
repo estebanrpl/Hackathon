@@ -6,7 +6,6 @@ import BaseComponent from './pages/BaseComponent';
 import MainPage from './pages/MainPage';
 
 const router = createBrowserRouter([
-  { path: '' },
 
   {
     path: '',
